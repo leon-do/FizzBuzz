@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<div>Write a program that prints the numbers from 1 to 100. But for multiples of three print Fizz instead of the number and for the multiples of five print Buzz. For numbers which are multiples of both three and five print FizzBuzz.</div>
+	<hr>
+	<div id=txt></div>
+
+	<script>
+
+		text = "";
+
+		for (var i = 1; i < 100; i++){
+			if (i % 3 === 0 && i % 5 === 0){
+				text = text + "FizzBuzz" + "<br>";
+			} else if (i % 3 === 0){
+				text = text + "Fizz" + "<br>";
+			} else if (i % 5 === 0){
+				text = text + "Buzz";
+			} else{
+				text = text + i + "<br>";
+			}
+		};
+
+		document.getElementById("txt").innerHTML = text;
+	</script>
+</body>
+</html>
